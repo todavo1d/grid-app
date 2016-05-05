@@ -1,0 +1,12 @@
+<tr>
+    <td ng-if="!editMode">{{user.name}}</td>
+    <td ng-if="editMode"><input ng-model="user.name" type="text"></td>
+    <td ng-if="!editMode">{{user.permission}}</td>
+    <td ng-if="editMode"><input ng-model="user.permission" type="text"></td>
+    <td class="actions">
+        <div class="action-buttons-group">
+            <div ng-click="editUser()" class="action-button edit"><i class="fa fa-cog" aria-hidden="true"></i></div>
+            <div ng-click="deleteUser(user)" class="action-button delete"><i class="fa fa-times-circle-o" aria-hidden="true"></i></div>
+        </div>
+    </td>
+</tr>

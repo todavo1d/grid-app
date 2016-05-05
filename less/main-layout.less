@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+body {
+  font-weight: 100;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #d4d4d4;
+    text-align: left;
+}
+
+th, tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+button {
+    outline: none;
+    background: #2ecc71;
+    border: 1px solid #2ecc71;
+    -webkit-transition: background 0.3s ease,color 0.3s ease;
+    -moz-transition: background 0.3s ease,color 0.3s ease;
+    -o-transition: background 0.3s ease,color 0.3s ease;
+    transition: background 0.3s ease,color 0.3s ease;
+    color: #ffffff;
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+input[type=text] {
+    outline: none;
+    border: 1px solid #f0f0f0;
+    width: 100%;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.custom-row {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    &:before {
+        content: '';
+        display: block;
+        clear: both;
+        overflow: hidden;
+        height: 0;
+    }
+}
+
+.common-title {
+    padding: 15px 0 15px 10px;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+
+    h3 {
+        font-weight: 400;
+    }
+}
+
+.users-grid {
+    margin: 0 auto;
+    position: relative;
+
+    &__table {
+        width: 100%;
+
+        .action-buttons-group {
+            margin: 0 auto;
+            width: 72px;
+        }
+
+        .action-button {
+            cursor: pointer;
+            display: inline-block;
+            padding: 5px 10px;
+            color: #fff;
+            border-radius: 5px;
+        }
+
+        .action-button.edit {
+            background-color: #3498db;
+        }
+
+        .action-button.delete {
+            background-color: #e74c3c;
+        }
+
+        td.actions {
+            width: 20%;
+            padding: 0;
+        }
+
+        td {
+            width: 40%;
+        }
+    }
+
+    &__add-user {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+        position: absolute;
+        right: -40px;
+        margin-top: -6px;
+
+        &:active {
+            background-color: #fff;
+            color: #2ecc71;
+            border: 1px solid #2ecc71;
+        }
+    }
+}

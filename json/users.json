@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "permission": "admin"
+    },
+    {
+        "id": 2,
+        "name": "Joan Doe",
+        "permission": "user"
+    },
+    {
+        "id": 3,
+        "name": "Jon Snow",
+        "permission": "user"
+    },
+    {
+        "id": 4,
+        "name": "Ramsay Snow",
+        "permission": "admin"
+    },
+    {
+        "id": 5,
+        "name": "Jaqen H'ghar",
+        "permission": "user"
+    }
+]

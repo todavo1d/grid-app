@@ -1,0 +1,29 @@
+<!doctype html>
+<html ng-app="app">
+    <head>
+        <meta charset="utf-8">
+        <title>users grid</title>
+        <link href="../less/all.less" rel="stylesheet/less" type="text/css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div ui-view></div>
+        <!-- Vendor libraries -->
+        <script src="../bower_components/angular/angular.js"></script>
+        <script src="../bower_components/ui-router/release/angular-ui-router.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.6.1/less.min.js"></script>
+        <!-- Application Files -->
+        <script src="app.module.js"></script>
+        <script src="app.config.js"></script>
+        <script src="grid-app/grid-app.module.js"></script>
+        <script src="grid-app/grid-app.config.js"></script>
+        <script src="grid-app/language-switcher/language-switcher.directive.js"></script>
+        <script src="grid-app/language-switcher/language-switcher.service.js"></script>
+        <script src="grid-app/language-switcher/translate.filter.js"></script>
+        <script src="grid-app/users-grid/users-grid.directive.js"></script>
+        <script src="grid-app/users-grid/users-grid.service.js"></script>
+        <script src="grid-app/users-grid/user-row/user-row.directive.js"></script>
+        <script src="grid-app/users-grid/users-grid.controller.js"></script>
+    </body>
+</html>
