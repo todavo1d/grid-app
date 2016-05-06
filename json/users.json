@@ -1,27 +1,22 @@
 [
     {
-        "id": 1,
-        "name": "John Doe",
+        "name": "David",
         "permission": "admin"
     },
     {
-        "id": 2,
-        "name": "Joan Doe",
-        "permission": "user"
+        "name": "Meir",
+        "permission": "editor"
     },
     {
-        "id": 3,
-        "name": "Jon Snow",
-        "permission": "user"
+        "name": "John",
+        "permission": "editor"
     },
     {
-        "id": 4,
-        "name": "Ramsay Snow",
+        "name": "Ramsay",
         "permission": "admin"
     },
     {
-        "id": 5,
-        "name": "Jaqen H'ghar",
-        "permission": "user"
+        "name": "Jaqen",
+        "permission": "editor"
     }
 ]

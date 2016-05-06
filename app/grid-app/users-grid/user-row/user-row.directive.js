@@ -16,8 +16,8 @@
         };
 
         function link(scope) {
-            Object.keys(scope.user).length === 0 ? scope.editMode = true : scope.editMode = false;
-            scope.editUser = function() {
+            scope.editMode = Object.keys(scope.user).length === 0;
+            scope.changeMode = function() {
                 scope.editMode = !scope.editMode;
             };
             scope.deleteUser = function() {

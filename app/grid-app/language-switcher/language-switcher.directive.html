@@ -1,5 +1,5 @@
 <select ng-model="currentValue" ng-change="setCurrentLanguage(currentValue)">
-    <option value="{{lang}}" ng-repeat="lang in getTranslations() track by $index">
-      {{lang}}
+    <option value="{{::language }}" ng-repeat="language in getTranslations() track by $index">
+      {{::language }}
     </option>
 </select>

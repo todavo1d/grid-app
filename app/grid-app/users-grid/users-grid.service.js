@@ -17,7 +17,10 @@
             return  $http
                         .get('../../json/users.json')
                         .success(function (data) {
-                            data.forEach(function(item) {users.push(item)})
+                            users.length = 0;
+                            data.forEach(function(user) {
+                                users.push(user)
+                            });
                     });
         };
 

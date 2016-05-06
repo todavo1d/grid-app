@@ -14,9 +14,7 @@
                     }
                 },
                 controller: function ($scope, $filter) {
-                    $scope.getTitle = function () {
-                        return $filter('translate')('GRID_TITLE');
-                    }
+                    $scope.getTranslated = $filter('translate');
                 }
 
             })
