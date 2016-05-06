@@ -6,6 +6,5 @@
     function UsersGridController($filter, UsersGridService) {
         this.addNewUser = UsersGridService.addNewUser;
         this.getUsers = UsersGridService.getUsers;
-        this.getTranslated = $filter('translate');
     };
 })();

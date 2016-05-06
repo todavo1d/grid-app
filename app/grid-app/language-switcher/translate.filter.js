@@ -4,9 +4,14 @@
         .filter('translate', translateFilter)
 
     function translateFilter(LanguageSwitcherService, UsersGridService) {
-        return function(str) {
+
+        function translate(str) {
             return LanguageSwitcherService.translate(str);
         };
+
+        translate.$stateful = true;
+
+        return translate;
     };
 
 })();

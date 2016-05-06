@@ -12,11 +12,7 @@
                     initData: function(UsersGridService) {
                         UsersGridService.init();
                     }
-                },
-                controller: function ($scope, $filter) {
-                    $scope.getTranslated = $filter('translate');
                 }
-
             })
     };
 })();
